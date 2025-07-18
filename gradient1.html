@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+      }
+    body{
+        height:600px;
+        width: 100%;
+        background: linear-gradient(to bottom right,#7dc53f,rgb(195, 248, 248));
+        justify-content: center;
+       align-items:center;
+       display: flex;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 100;
+      }
+      .outer{
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px black;
+        width:250px;
+        height: 300px;
+        background: #fff;
+        margin:200px;
+        padding:50px;
+        border: 1px solid whitesmoke;
+       
+      }
+      .outer h2{
+        text-align: center;
+            margin-bottom: 30px;
+            white-space: nowrap;
+      }
+      .outer input[type="text"] ,
+      .outer input[type="password"]{
+        width: 100%;
+     padding: 10px;
+      margin-right: 30px ;
+      margin-bottom:10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      }
+      
+      
+      .outer input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .outer input[type="submit "]:hover {
+      background: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="outer">
+      
+        <h2>Sign in your Account</h2>
+        <form>
+            <input type="text" placeholder="Username" required> 
+            <input type="password" placeholder="*******" required> <br>  <br> 
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Agree with terms and Conditions</label><br>
+            <input type="submit" value="Sign In" required> <br> <br>
+            <input type="submit" value="Forget" required style="background: white; border: 1px solid black; color:black">
+        </form>
+ 
+    </div>
+</body>
+</html>
